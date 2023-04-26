@@ -25,7 +25,7 @@
          const route = useRoute();
   
          onBeforeMount(() => {
-             fetch(`http://www.omdbapi.com/?apikey=fcc1eb7e&i=${route.params.id}&plot=full`)
+             fetch(`https://www.omdbapi.com/?apikey=fcc1eb7e&i=${route.params.id}&plot=full`)
              .then(response => response.json())
              .then(data => {
                 movie.value =  data;
